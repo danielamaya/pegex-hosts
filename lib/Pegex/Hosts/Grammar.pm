@@ -1,8 +1,8 @@
-package Neuadmin::Files::Hosts::Grammar;
+package Pegex::Hosts::Grammar;
 use Pegex::Base;
 extends 'Pegex::Grammar';
 
-use constant file => 'lib/Neuadmin/Files/pgx/hosts.pgx';
+use constant file => 'pgx/hosts.pgx';
 
 sub make_tree {   # Generated/Inlined by Pegex::Grammar (0.60)
   {

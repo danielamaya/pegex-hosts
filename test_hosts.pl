@@ -2,11 +2,11 @@
 use strict;
 use Pegex::Parser;
 use lib 'lib';
-use Neuadmin::Files::Hosts::Grammar;
+use Pegex::Hosts::Grammar;
 use Data::Dumper;
 
 {
-    package Neuadmin::Files::Hosts::AST;
+    package Pegex::Hosts::AST;
     use base 'Pegex::Tree';
     use Data::Dumper;
     
@@ -26,8 +26,8 @@ my $src = do { local $/; <$in> };
 
 my $ast =
   Pegex::Parser->new(
-    grammar => Neuadmin::Files::Hosts::Grammar->new,
-    receiver => Neuadmin::Files::Hosts::AST->new,
+    grammar => Pegex::Hosts::Grammar->new,
+    receiver => Pegex::Hosts::AST->new,
     debug => 1,
   )->parse($src);
 
