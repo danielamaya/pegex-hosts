@@ -1,4 +1,4 @@
-%grammar haproxy
+%grammar hosts
 %version 0.0.1
 
 hosts: host | blanks | comments

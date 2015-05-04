@@ -6,7 +6,7 @@ use constant file => 'pgx/hosts.pgx';
 
 sub make_tree {   # Generated/Inlined by Pegex::Grammar (0.60)
   {
-    '+grammar' => 'haproxy',
+    '+grammar' => 'hosts',
     '+toprule' => 'hosts',
     '+version' => '0.0.1',
     '_' => {
